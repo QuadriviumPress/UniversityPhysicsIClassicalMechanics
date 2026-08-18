@@ -1,0 +1,38 @@
+version: 1
+project:
+  title: "University Physics I: Classical Mechanics"
+  short_title: "University Physics I"
+  authors:
+    - name: Julio Gea-Banacloche
+      affiliations:
+        - institution: University of Arkansas
+          city: Fayetteville
+          state: Arkansas
+          country: United States
+  date: 2019-02-08
+  license: CC-BY-SA-4.0
+  open_access: true
+  github: veillette/UniversityPhysicsIClassicalMechanics
+  toc:
+    - file: index.md
+    - file: preface.md
+    - file: chapters/ch-01-reference-frames-displacement-and-velocity.md
+    - file: chapters/ch-02-acceleration.md
+    - file: chapters/ch-03-momentum-and-inertia.md
+    - file: chapters/ch-04-kinetic-energy.md
+    - file: chapters/ch-05-interactions-and-energy.md
+    - file: chapters/ch-06-interactions-part-2-forces.md
+    - file: chapters/ch-07-impulse-work-and-power.md
+    - file: chapters/ch-08-motion-in-two-dimensions.md
+    - file: chapters/ch-09-rotational-dynamics.md
+    - file: chapters/ch-10-gravity.md
+    - file: chapters/ch-11-simple-harmonic-motion.md
+    - file: chapters/ch-12-waves-in-one-dimension.md
+    - file: chapters/ch-13-thermodynamics.md
+site:
+  template: book-theme
+  title: "University Physics I: Classical Mechanics"
+  actions:
+    - title: Original OER
+      url: https://scholarworks.uark.edu/oer/3/
+  nav: []

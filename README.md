@@ -1,31 +1,55 @@
-# LaTeX Version of "University Physics I:Classical Mechanics"
-This repository contains the LaTeX source files for University Physics I:Classical Mechanics" by Julio Gea-Banacloche. 
+# University Physics I: Classical Mechanics
 
-These files have been extracted from the original PDF textbook.
+This repository contains a MyST Markdown edition of Julio Gea-Banacloche's
+*University Physics I: Classical Mechanics*. The root-level MyST project is
+the primary, editable edition. The previous PDF-derived LaTeX conversion is
+preserved under [`latex/`](latex/) as a secondary source.
 
-## Original Source
-The original textbook is available as an Open Educational Resource (OER) and can be found at:
-https://scholarworks.uark.edu/oer/3/
+The Fall 2019 source textbook is available from
+[ScholarWorks@UARK](https://scholarworks.uark.edu/oer/3/) and is licensed
+[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
-## Purpose of this Repository
-This GitHub repository aims to provide a LaTeX version of the textbook, extracted from the original PDF file. The LaTeX format offers several advantages:
+## Repository layout
 
-- Easy editing and customization
-- Better version control
-- Ability to generate various output formats (PDF, HTML, etc.)
-- Improved accessibility features
+- [`myst.yml`](myst.yml) — project metadata and table of contents
+- [`index.md`](index.md) and [`preface.md`](preface.md) — front matter
+- [`chapters/`](chapters/) — thirteen MyST Markdown chapters
+- [`images/`](images/) — 117 figures used by the MyST edition
+- [`latex/`](latex/) — legacy LaTeX source and its image copy
+- [`scripts/`](scripts/) — reproducible conversion and verification tools
 
-## Disclaimer
-Please note that this LaTeX version is an attempt to faithfully reproduce the original content. There may be some discrepancies or formatting issues due to the extraction process. We encourage users to compare with the original PDF and submit issues or pull requests for any corrections or improvements.
+## Preview and build
 
-## Usage
-To use these LaTeX files:
+The project targets MyST CLI 1.10.1:
 
-- Clone the repository
-- Compile the main LaTeX file using pdflatex compiler (Texlive version 2024 was used)
-- Generate the output in your desired format
+```bash
+npm install -g mystmd@1.10.1
+myst start
+```
 
-## Contributing
-We welcome contributions to improve the LaTeX version of this textbook. Please feel free to submit issues or pull requests.
-## License
-This work is subject to the same license as the original textbook. Please refer to the original source for licensing information.
+Build the static site with:
+
+```bash
+myst build --html
+```
+
+Generated files are written to `_build/` and are not committed. Pushes to
+`main` also build and deploy the site through GitHub Pages.
+
+## Verify the conversion
+
+```bash
+python3 scripts/verify_book.py
+```
+
+The verifier checks the chapter list, figure-reference parity with the legacy
+LaTeX source, missing assets, and common conversion artifacts.
+
+To regenerate the Markdown mechanically from the archived LaTeX extraction:
+
+```bash
+python3 scripts/convert_latex_to_myst.py
+```
+
+The generated chapters are intended to be reviewed and improved as MyST; the
+LaTeX extraction remains available to cross-check any questionable passage.

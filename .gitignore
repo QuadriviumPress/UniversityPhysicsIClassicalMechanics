@@ -1,0 +1,9 @@
+_build/
+.myst/
+work/
+tmp/
+node_modules/
+*.aux
+*.log
+*.out
+*.pdf
