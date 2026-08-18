@@ -43,7 +43,20 @@ python3 scripts/verify_book.py
 ```
 
 The verifier checks the chapter list, figure-reference parity with the legacy
-LaTeX source, missing assets, and common conversion artifacts.
+LaTeX source, missing assets, semantic cross-references, and common conversion
+artifacts.
+
+Numbered headings, figures, equations, and tables are linked mechanically:
+
+```bash
+python3 scripts/link_cross_references.py          # update the Markdown
+python3 scripts/link_cross_references.py --check  # read-only validation
+python3 scripts/link_cross_references.py --check --diff
+```
+
+The linker fails on duplicate targets and reports unresolved or missing
+references with file and line numbers, making exceptions straightforward to
+review by hand. It is also run automatically by the LaTeX conversion script.
 
 To regenerate the Markdown mechanically from the archived LaTeX extraction:
 

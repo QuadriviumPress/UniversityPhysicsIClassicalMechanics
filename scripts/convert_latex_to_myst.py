@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import re
 import subprocess
+import sys
 import tempfile
 from pathlib import Path
 
@@ -119,6 +120,15 @@ def main() -> None:
         )
         (CHAPTERS / filename).write_text(frontmatter + normalize(pandoc(fragment), number), encoding="utf-8")
         print(filename)
+
+    # The extraction contains printed numbers rather than semantic links.
+    # Apply the deterministic second pass after all cross-reference targets are
+    # available across all chapters.
+    subprocess.run(
+        [sys.executable, str(ROOT / "scripts" / "link_cross_references.py")],
+        check=True,
+        cwd=ROOT,
+    )
 
 
 if __name__ == "__main__":

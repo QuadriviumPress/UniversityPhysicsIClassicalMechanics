@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import re
+import subprocess
 import sys
 from pathlib import Path
 
@@ -22,6 +23,7 @@ def main() -> int:
     expected_images = len(re.findall(r"\\includegraphics[^\{]*\{[^}]+\}", tex))
     markdown = "\n".join(path.read_text(encoding="utf-8") for path in chapters)
     image_targets = re.findall(r"^!\[[^]]*\]\((.*)\)$", markdown, flags=re.MULTILINE)
+    image_targets += re.findall(r"^:::\{figure\}\s+(\S+)\s*$", markdown, flags=re.MULTILINE)
     if len(image_targets) != expected_images:
         errors.append(f"expected {expected_images} figure references, found {len(image_targets)}")
 
@@ -38,6 +40,15 @@ def main() -> int:
         resolved = (ROOT / "chapters" / target).resolve()
         if not resolved.is_file():
             errors.append(f"missing image: {target}")
+
+    links = subprocess.run(
+        [sys.executable, str(ROOT / "scripts" / "link_cross_references.py"), "--check"],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+    )
+    if links.returncode:
+        errors.append("cross-reference verification failed:\n" + links.stdout.rstrip())
 
     if errors:
         print("Verification failed:")

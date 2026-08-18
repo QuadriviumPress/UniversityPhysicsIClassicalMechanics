@@ -4,7 +4,8 @@ short_title: Preface
 label: preface
 ---
 
-## Students: if this is too long, at the very least read the last four paragraphs. Thank you! {#students-if-this-is-too-long-at-the-very-least-read-the-last-four-paragraphs.-thank-you}
+(preface-students-if-this-is-too-long-at-the-very-least-read-the-last-four-paragraphs.-thank-you)=
+## Students: if this is too long, at the very least read the last four paragraphs. Thank you!
 
 For many years Eric Mazur's Principles and Practice of Physics was the required textbook for University Physics I at the University of Arkansas. In writing this open-source replacement I have tried to preserve some of its best features, while at the same time condensing much of the presentation, and reworking several sections that did not quite fit the needs of our curriculum: primarily, the chapters on Thermodynamics, Waves, and Work. I have also skipped entirely the chapter on the \"Principle of Relativity,\" and instead distributed its contents among other chapters: in particular, the Galilean reference frame transformations are now introduced at the very beginning of the book, as are the law of inertia and the concept of inertial reference frames.
 
@@ -27,7 +28,8 @@ One last word, for the students who may have read this far, concerning the use o
 
 I would, however, encourage you to return, eventually, to any bit of math that you found challenging the first time around. Do try to go through all the algebra yourself! I have occasionally skipped intermediate steps, just to keep the math from overwhelming the text: but these are typically straightforward manipulations (multiplying or dividing both sides by something, moving something from one side of the equation to the other, multiplying out a parenthesis or, conversely, pulling out a common factor or denominator\...). If you actually work out, on your own, all the missing steps, you will find it's a great way to improve your algebra skills. This is something that will make it much easier for you to deal with the homework and the exams later on this semester - and for the rest of your career as well.
 
-## P.S. A few possibly useful features. {#p.s.-a-few-possibly-useful-features.}
+(preface-p.s.-a-few-possibly-useful-features.)=
+## P.S. A few possibly useful features.
 
 The pdf version of this book is, of course searchable: you can use command-F on the Mac or control-F in Windows to search the text for any term (hint: try searching the textbook before hitting Google!!). Hopefully, this will make up a little for the lack of an actual index, which I just haven't found the time to compile yet.
 
