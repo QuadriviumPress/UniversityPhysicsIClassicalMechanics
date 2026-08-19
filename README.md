@@ -5,7 +5,7 @@ Julio Gea-Banacloche's *University Physics I: Classical Mechanics*. The root-lev
 MyST project is the primary, editable edition. The previous PDF-derived LaTeX
 extraction is preserved under [`latex/`](latex/) for provenance and comparison.
 
-**Live site:** [veillette.github.io/UniversityPhysicsIClassicalMechanics](https://veillette.github.io/UniversityPhysicsIClassicalMechanics/)
+**Live site:** [quadriviumpress.github.io/UniversityPhysicsIClassicalMechanics](https://quadriviumpress.github.io/UniversityPhysicsIClassicalMechanics/)
 
 The book introduces classical mechanics for scientists and engineers, followed by
 waves and a brief introduction to thermodynamics. It is organized into thirteen

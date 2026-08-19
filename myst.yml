@@ -12,7 +12,7 @@ project:
   date: 2019-02-08
   license: CC-BY-SA-4.0
   open_access: true
-  github: veillette/UniversityPhysicsIClassicalMechanics
+  github: QuadriviumPress/UniversityPhysicsIClassicalMechanics
   toc:
     - file: index.md
     - file: preface.md
