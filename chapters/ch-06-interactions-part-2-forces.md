@@ -306,7 +306,7 @@ The science behind friction (known technically as tribology) is actually not ver
 
 As long as this does not happen, that is, as long as the surfaces do not slide relative to each other, we say we are dealing with the static friction force, which is, at least approximately, an elastic force that does not dissipate energy: the small distortion of the \"bumps\" on the surfaces that takes place when you push on them typically happens slowly enough, and is small enough, to be reversible, so that when you stop pushing the two surfaces just go back to their initial state. This is no longer the case once the surfaces start sliding relative to each other. At that point the character of the friction force changes, and we have to deal with the sliding, or kinetic friction force, as I will explain below.
 
-The static friction force is also, like tension and the normal force, a reaction force that will adjust itself, within limits, to take any value required to prevent slippage in a given circumstance. Hence, its actual value in a particular situation cannot really be ascertained until the other relevant forcesthe other forces pushing or pulling on the object-are known.
+The static friction force is also, like tension and the normal force, a reaction force that will adjust itself, within limits, to take any value required to prevent slippage in a given circumstance. Hence, its actual value in a particular situation cannot really be ascertained until the other relevant forces-the other forces pushing or pulling on the object-are known.
 
 For instance, for the system in {numref}`Figure %s <fig-6.2>`, imagine there is a force of static friction between block 1 and the surface on which it rests, sufficiently large to keep it from sliding altogether. How large
 

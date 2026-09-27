@@ -206,7 +206,7 @@ As the ball falls, gravitational potential energy is being converted into kineti
 (sec-5.5)=
 ## 5.5 In summary
 
-1.  For conservative interactions one can define a potential energy $U$, such that that in the course of the interaction the total mechanical energy $E=U+K$ of the system remains constant, even as $K$ and $U$ separately change. The function $U$ is a measure of the energy stored in the configuration of the system, that is, the relative position of all its parts.
+1.  For conservative interactions one can define a potential energy $U$, such that in the course of the interaction the total mechanical energy $E=U+K$ of the system remains constant, even as $K$ and $U$ separately change. The function $U$ is a measure of the energy stored in the configuration of the system, that is, the relative position of all its parts.
 
 2.  The potential energy function for a system of two particles must be a function of their relative position only: $U\left(x_{1}-x_{2}\right)$. However, if one of the objects is very massive, so it does not move during the interaction, its position may be taken to be the origin of coordinates, and $U$ written as a function of the lighter object's coordinate alone.
 

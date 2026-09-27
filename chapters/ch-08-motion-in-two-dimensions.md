@@ -19,7 +19,7 @@ To begin with, recall that a vector is a quantity that has both a magnitude and 
 The components of a vector that makes an angle $\theta$ with the positive $x$ axis. Two examples are shown, for $\theta<90^{\circ}$ (in which case $F_{x}>0$ ) and for $90^{\circ}<\theta<180^{\circ}$ (in which case $F_{x}<0$ ). In both cases, $F_{y}>0$.
 :::
 
-The triangle will always have the vector's magnitude $(|\vec{F}|$ in this case $)$ as the hypothenuse. The two other sides should be parallel to the coordinate axes. Their lengths are the corresponding components, except for a sign that depends on the orientation of the vector. If we happen to know the angle $\theta$ that the vector makes with the positive $x$ axis, the following relations will always hold:
+The triangle will always have the vector's magnitude $(|\vec{F}|$ in this case $)$ as the hypotenuse. The two other sides should be parallel to the coordinate axes. Their lengths are the corresponding components, except for a sign that depends on the orientation of the vector. If we happen to know the angle $\theta$ that the vector makes with the positive $x$ axis, the following relations will always hold:
 
 :::{math}
 :label: eq-8.1
@@ -79,7 +79,7 @@ The plane in question is determined by the initial velocity (more precisely, the
 A typical projectile trajectory. The velocity vector (in green) is shown at the initial time, the point of maximum height, and the point where the projectile is back to its initial height.
 :::
 
-Conceptually, the problem turns out to be extremely simple if we apply the basic principle introduced in {ref}`Section 8.1 <sec-8.1>`. The force is vertical throughout; so, after the throw, there is no horizontal acceleration, and the vertical acceleration is just $-g$, just as it always was in our earlier, onedimensional free-fall problems:
+Conceptually, the problem turns out to be extremely simple if we apply the basic principle introduced in {ref}`Section 8.1 <sec-8.1>`. The force is vertical throughout; so, after the throw, there is no horizontal acceleration, and the vertical acceleration is just $-g$, just as it always was in our earlier, one-dimensional free-fall problems:
 
 :::{math}
 :label: eq-8.4
@@ -122,7 +122,7 @@ y_{\text {max height }} & =y_{i}+\frac{v_{y, i}^{2}}{2 g}
 \end{align*}
 :::
 
-The last of these equations should look familiar. It is, indeed a variation on our old friend $v_{f}^{2}-v_{i}^{2}=$ $-2 g \Delta y$, only now instead of the full velocity $\vec{v}$ we have to use only the vertical velocity component $v_{y}$. Just like for one-dimensional motion, this result follows again from conservation of energy: throughout the flight, we must have $K+U^{G}=$ constant, only now there is a component to the kinetic energy - the part associated with the horizontal motion - which remains constant on its own. In general, the kinetic energy of a particle will be $\frac{1}{2} m|\vec{v}|^{2}$, where $|\vec{v}|$ is the magnitude of the velocity vector - that is to say, the speed. In two dimensions, this gives
+The last of these equations should look familiar. It is, indeed, a variation on our old friend $v_{f}^{2}-v_{i}^{2}=$ $-2 g \Delta y$, only now instead of the full velocity $\vec{v}$ we have to use only the vertical velocity component $v_{y}$. Just like for one-dimensional motion, this result follows again from conservation of energy: throughout the flight, we must have $K+U^{G}=$ constant, only now there is a component to the kinetic energy - the part associated with the horizontal motion - which remains constant on its own. In general, the kinetic energy of a particle will be $\frac{1}{2} m|\vec{v}|^{2}$, where $|\vec{v}|$ is the magnitude of the velocity vector - that is to say, the speed. In two dimensions, this gives
 
 :::{math}
 :label: eq-8.8
