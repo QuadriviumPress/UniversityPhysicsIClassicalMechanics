@@ -42,6 +42,7 @@ site:
   template: book-theme
   title: "University Physics I: Classical Mechanics"
   options:
+    favicon: images/favicon.svg
     logo: images/logo.svg
     logo_dark: images/logo-dark.svg
     logo_alt: Planet in an elliptical orbit around a star
